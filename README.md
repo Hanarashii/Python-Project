@@ -1,10 +1,13 @@
 # Python-Project
-# This is a project for user to visualize the data from kagglehub
-# To run the project, simply clone/download the project and follow these steps.
-# Step 1: Create .venv file
-# python -m venv .venv
-# Step 2: Download the required packages
-# .\venv\Scripts\activate
-# pip install -r requirements.txt
-# deactivate
-# Step 3: Run the main.py file
+
+**This is a project for user to visualize data from kagglehub.**  
+  
+To run the project, follow these steps.  
+Step 1: Create python venv  
+python -m venv .venv  
+Step 2: Install all required packages  
+Activate python venv  
+.\venv\Script\activate  
+pip install -r requirements.txt  
+Step 3: Run main.py  
+python main.py  
