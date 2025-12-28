@@ -2,7 +2,7 @@
 Module: data_visualizer/visualizer.py
 
 Mô tả:
-    - Module này chứa các hàm dùng để trực quan hóa dữ liệu cho tập dữ liệu CarDekho.
+    - Module này chứa các hàm dùng để trực quan hóa dữ liệu cho tập dữ liệu processed.csv
     - Phân tích các yếu tố ảnh hưởng đến giá xe:
         + Năm sản xuất
         + Loại nhiên liệu
