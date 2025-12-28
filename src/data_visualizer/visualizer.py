@@ -31,7 +31,7 @@ def plot_price_distribution(df):
     plt.ylabel("Number of Vehicles")
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
-    plt.show()
+   
 
 def plot_price_by_year(df):
     """Vẽ biểu đồ Scatter plot để xem mối quan hệ giữa Năm sản xuất và Giá bán"""
@@ -51,7 +51,7 @@ def plot_price_by_year(df):
     plt.ylabel('Selling Price')
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.tight_layout()
-    plt.show()
+   
 
 
 def plot_vehicle_count_by_fuel(df):
@@ -67,7 +67,7 @@ def plot_vehicle_count_by_fuel(df):
     plt.ylabel("Number of Vehicles")
     plt.grid(axis='y', linestyle='--', alpha = 0.7)
     plt.tight_layout()
-    plt.show()
+   
 
 
 def plot_price_by_transmission(df):
@@ -80,7 +80,7 @@ def plot_price_by_transmission(df):
     plt.title("Average Selling Price by Transmission Type")
     plt.xticks(rotation=0)
     plt.tight_layout()
-    plt.show()
+   
 
 
 def plot_kms_vs_price(df):
@@ -91,7 +91,7 @@ def plot_kms_vs_price(df):
     plt.ylabel("Selling Price")
     plt.title("Kilometers Driven vs Selling Price")
     plt.tight_layout()
-    plt.show()
+  
 
 
 def plot_price_vs_mileage(df):
@@ -105,7 +105,7 @@ def plot_price_vs_mileage(df):
     plt.ylabel("Average Selling Price")
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.tight_layout()
-    plt.show()
+   
 
 
 def plot_price_by_car_age(df):
@@ -119,8 +119,19 @@ def plot_price_by_car_age(df):
     plt.ylabel("Average Selling Price")
     plt.xticks(avg_price_age.index)
     plt.tight_layout()
+    
+
+def run_all(df):
+    plot_price_distribution(df)
+    plot_price_by_year(df)
+    plot_vehicle_count_by_fuel(df)
+    plot_price_by_transmission(df)
+    plot_kms_vs_price(df)
+    plot_price_vs_mileage(df)
+    plot_price_by_car_age(df)
+
     plt.show()
 
 if __name__ == "__main__":
     df = pd.read_csv("processed.csv")
-    plot_price_distribution(df)
+    run_all(df)
