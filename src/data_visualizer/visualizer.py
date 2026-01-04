@@ -130,7 +130,3 @@ def run_all(df):
     plot_price_by_car_age(df)
 
     plt.show()
-
-if __name__ == "__main__":
-    df = pd.read_csv("processed.csv")
-    run_all(df)
